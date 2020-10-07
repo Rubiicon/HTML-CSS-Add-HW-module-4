@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  margin-left: 100px;
+  overflow: hidden;
+}
+nav li{
+  list-style: none;
+  padding: 20px;
+  float: left;
+}
+
+li:hover{
+  background-color: teal;
+}
+
+.nav-2 li:nth-child(3n+2){
+  background-color: #0D5D56;
+}
+
+.nav-2 li:nth-child(3n+1){
+  background-color: #88292F;
+}
+.nav-2 li:nth-child(3n+3){
+  background-color: #5DB7DE;
+}
+
+.nav-3 li:before{
+    content: "\2192";
+    padding-right: 10px;
+}
+
+
+.nav-4{
+  counter-reset: section;
+  
+}
+
+.nav-4 li:before {
+  counter-increment: section;                
+  content: "" counter(section, upper-roman) ": ";
+}
+
